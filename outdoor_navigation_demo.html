@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b582372247119a5bba18f56fddffbfc4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b582372247119a5bba18f56fddffbfc4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b582372247119a5bba18f56fddffbfc4 = L.map(
+                "map_b582372247119a5bba18f56fddffbfc4",
+                {
+                    center: [53.54439, 10.023626],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5d1559144eab7a4c1963d3a47730b18d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5d1559144eab7a4c1963d3a47730b18d.addTo(map_b582372247119a5bba18f56fddffbfc4);
+        
+    
+            tile_layer_5d1559144eab7a4c1963d3a47730b18d.addTo(map_b582372247119a5bba18f56fddffbfc4);
+        
+    
+        function geo_json_11aa96dc02468d6ab376db2871862231_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_11aa96dc02468d6ab376db2871862231_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_11aa96dc02468d6ab376db2871862231 = L.geoJson(null, {
+                onEachFeature: geo_json_11aa96dc02468d6ab376db2871862231_onEachFeature,
+            
+                style: geo_json_11aa96dc02468d6ab376db2871862231_styler,
+        });
+
+        function geo_json_11aa96dc02468d6ab376db2871862231_add (data) {
+            geo_json_11aa96dc02468d6ab376db2871862231
+                .addData(data);
+        }
+            geo_json_11aa96dc02468d6ab376db2871862231_add({"features": [{"geometry": {"coordinates": [[10.023353739943218, 53.54686433018489], [10.023518737315527, 53.5469014648952], [10.023816232578412, 53.54652417472485], [10.023641235364948, 53.54648109807414], [10.023351239983128, 53.54686730096273]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_11aa96dc02468d6ab376db2871862231.bindTooltip(
+                `<div>
+                     Hammerbrook Sbahn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            geo_json_11aa96dc02468d6ab376db2871862231.addTo(map_b582372247119a5bba18f56fddffbfc4);
+        
+    
+        function geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "green"};
+            }
+        }
+
+        function geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf = L.geoJson(null, {
+                onEachFeature: geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf_onEachFeature,
+            
+                style: geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf_styler,
+        });
+
+        function geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf_add (data) {
+            geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf
+                .addData(data);
+        }
+            geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf_add({"features": [{"geometry": {"coordinates": [[[10.023170303297348, 53.544216785618346], [10.02408506728483, 53.54447974354795], [10.024006529935548, 53.54458384623646], [10.02368633920284, 53.54449769230524], [10.023538326506213, 53.544535384671974], [10.023486975161802, 53.544605384691465], [10.023544367840827, 53.5446915384035], [10.023843413901432, 53.54477051248486], [10.023749773215542, 53.544890768190015], [10.023441665153058, 53.54480461488404], [10.023296673122786, 53.5448297429495], [10.023251363113985, 53.54490333219931], [10.02330271445743, 53.545002049284335], [10.023592698516978, 53.54507563823458], [10.023508119833053, 53.54518691884286], [10.022607960982157, 53.54493743449089], [10.02268774242117, 53.54483212915909], [10.022868200607718, 53.54488335985448], [10.023050663886494, 53.544845234691934], [10.023346206966124, 53.54447417917592], [10.02328155078257, 53.54436717082737], [10.023095211245192, 53.544314839038776], [10.023170303297348, 53.544216785618346]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf.bindTooltip(
+                `<div>
+                     XLab / Digilab
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf.addTo(map_b582372247119a5bba18f56fddffbfc4);
+        
+    
+            ant_path_c5265211b56bcc62b88a82641d4ceb1f = L.polyline.antPath(
+              [[53.546781895305315, 10.023607673643795], [53.54680777436781, 10.023719672906509], [53.546656196776865, 10.023834783259758], [53.5463826163367, 10.024046337422249], [53.546079457567004, 10.024270335947762], [53.54584654142735, 10.024463223567295], [53.545670929204846, 10.024590778282487], [53.54552119610287, 10.024043226331742], [53.54534796143625, 10.023394812243055], [53.544994725641516, 10.023679130702021], [53.54474643494939, 10.02389021561902], [53.5443802497399, 10.02414692146644], [53.54421874220586, 10.023573108399376], [53.544452030668396, 10.023407004616871]],
+              {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_b582372247119a5bba18f56fddffbfc4);
+        
+    
+            ant_path_c5265211b56bcc62b88a82641d4ceb1f.bindTooltip(
+                `<div>
+                     Way to DigiLab
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_5d1559144eab7a4c1963d3a47730b18d.addTo(map_b582372247119a5bba18f56fddffbfc4);
+        
+    
+            geo_json_11aa96dc02468d6ab376db2871862231.addTo(map_b582372247119a5bba18f56fddffbfc4);
+        
+    
+            geo_json_6ffc01baebaaa43d8dc9d30a7321e1bf.addTo(map_b582372247119a5bba18f56fddffbfc4);
+        
+</script>
+</html>
