@@ -2,7 +2,6 @@ import streamlit as st
 import folium
 from folium import plugins
 from streamlit_folium import folium_static
-import pandas as pd
 from folium.plugins import AntPath
 import os
 import json
