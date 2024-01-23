@@ -21,7 +21,7 @@ def load_lottiefile(file_name: str):
     with open(file_name) as f:
         return json.load(f)
 
-lottie_animation = load_lottiefile("scr/files/animation.json") 
+lottie_animation = load_lottiefile("files/animation.json") 
 # add lottie animation to sidebar at top
 
 st.markdown("<h1 style='text-align: center; '>Outdoor Navigation (DigiLab)</h1>", unsafe_allow_html=True)
@@ -160,7 +160,6 @@ submit_button = st.sidebar.button(label="Get Direction",type="primary",disabled=
 if submit_button:
     # st.session_state["submit_button"] = False
     if user_start_point == 'Hammerbrook' and user_end_point == 'DigiLab':
-        print("inside this function")
         load_path_hammerbrook_to_digilab()
     elif user_start_point == 'Hamburg Hbf' and user_end_point == 'DigiLab':
         load_path_hbf_to_digilab()
