@@ -21,7 +21,7 @@ def load_lottiefile(file_name: str):
     with open(file_name) as f:
         return json.load(f)
 
-lottie_animation = load_lottiefile("files/animation.json")
+lottie_animation = load_lottiefile("scr/files/animation.json") 
 # add lottie animation to sidebar at top
 
 st.markdown("<h1 style='text-align: center; '>Outdoor Navigation (DigiLab)</h1>", unsafe_allow_html=True)
